@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zip's website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #ff0000; /* Red text */
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 10px;
+            width: 600px;
+            background-color: #000000; /* Darker grey background */
+            border: 2px solid #222; /* Darker grey border */
+            padding: 15px;
+        }
+        .profile {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center the profile content */
+            padding: 10px;
+            border: 2px solid #222; /* Darker grey border */
+        }
+        .profile img {
+            width: 150px; /* Increased size */
+            height: 150px; /* Increased size */
+            background-color: #222; /* Darker grey background for the profile picture */
+            margin-right: 10px;
+        }
+        .profile-info {
+            display: flex;
+            flex-direction: column;
+            text-align: center; /* Center text */
+        }
+        .profile .username {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+        .profile .pronouns {
+            font-size: 1.1em;
+            color: #ff0000;
+        }
+        .about {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            padding: 10px;
+            border: 2px solid #222; /* Darker grey border */
+            font-size: 1.1em;
+        }
+        .about h3 {
+            color: #ff0000;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        .links {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 10px;
+            border: 2px solid #222; /* Darker grey border */
+            font-size: 1.1em;
+            align-items: center;
+        }
+        .links a {
+            color: #ff0000;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .cat {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            border: 2px solid #222; /* Darker grey border */
+            font-size: 1.1em;
+        }
+        .cat p {
+            margin-bottom: 10px;
+        }
+        .cat img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="profile">
+        <img src="https://i.pinimg.com/736x/f1/5c/32/f15c3224d97dddfacdd59dee5e54fc0e.jpg" alt="pfp">
+        <div class="profile-info">
+            <p class="username">zip</p>
+            <p class="pronouns">he/him</p>
+        </div>
+    </div>
+    <div class="about">
+        <h3>about me:</h3>
+        <p>RAHHHHHHHHHHHHHHH idk what else to say</p>
+    </div>
+    <div class="links">
+        <a href="https://www.instagram.com/zipisoffline" target="_blank">instagram</a>
+        <a href="https://www.twitter.com/zipisoffline" target="_blank">twitter</a>
+        <a href="https://discordapp.com/users/1272697997276352585" target="_blank">discord</a>
+        <a href="https://steamcommunity.com/id/zip8/" target="_blank">steam</a>
+        <a href="https://www.roblox.com/users/43196922/profile" target="_blank">roblox</a>
+        <a href="https://www.roblox.com/users/96801892/profile" target="_blank">roblox alt</a>
+    </div>
+    <div class="cat">
+        <p>random kitty cat</p>
+        <img src="https://cataas.com/cat" alt="random cat photo">
+    </div>
+</div>
+
+</body>
+</html>
